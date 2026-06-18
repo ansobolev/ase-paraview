@@ -21,6 +21,9 @@ def view_paraview(atoms: Atoms, **_) -> subprocess.Popen:
     return subprocess.Popen(['paraview', str(tmp_path)])
 
 
+view_paraview_v3 = view_paraview
+
+
 class ParaViewViewer(CLIViewer):
     def __init__(self):
         super().__init__('paraview', 'xyz', ['paraview'])
