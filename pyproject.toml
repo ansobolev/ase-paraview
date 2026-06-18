@@ -8,9 +8,6 @@ version = "0.0.1"
 authors = [
     { name = "Andrei Sobolev", email = "sobolev@ms1p.org" }
 ]
-maintainers = [
-    { name = "Andrei Sobolev", email = "sobolev@ms1p.org" }
-]
 description = ""
 readme = "README.md"
 requires-python = ">=3.10"
@@ -29,6 +26,9 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Physics",
     "Topic :: Scientific/Engineering :: Chemistry",
 ]
+
+[project.entry-points.'ase.visualize']
+paraview = 'ase_paraview'
 
 [project.entry-points.'ase.plugins']
 paraview = 'ase_paraview'
