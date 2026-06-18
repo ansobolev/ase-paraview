@@ -33,7 +33,6 @@ classifiers = [
 [project.entry-points.'ase.plugins']
 paraview = 'ase_paraview'
 
-
 [project.optional-dependencies]
 dev = [
     "ruff",

@@ -1,7 +1,7 @@
 
-from .plugin import paraview_plugin
+from .viewer import paraview_plugin
 
 
 __ase_plugins__ = {
-    'ase_paraview': paraview_plugin,
+    paraview_plugin,
 }

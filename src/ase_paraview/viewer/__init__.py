@@ -5,12 +5,8 @@ from ase._4.plugins.viewer import ViewerPlugin
 THIS_MODULE = sys.modules[__name__]
 
 paraview_plugin = ViewerPlugin(
-    name="paraview-plugin",
+    name="paraview",
     citation="Andrei Sobolev and the ASE Developers",
     module=THIS_MODULE,
-    implementation="ase_paraview.plugin.ParaviewPlugin"
+    implementation="ase_paraview.viewer.plugin.ParaviewPlugin"
 )
-
-
-class ParaviewPlugin:
-    pass
