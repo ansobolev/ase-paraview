@@ -28,10 +28,10 @@ classifiers = [
 ]
 
 [project.entry-points.'ase.visualize']
-paraview = 'ase_paraview'
+paraview = 'ase_paraview.viewer:V3ParaviewViewer'
 
 [project.entry-points.'ase.plugins']
-paraview = 'ase_paraview'
+paraview-v4 = 'ase_paraview'
 
 [project.optional-dependencies]
 dev = [
