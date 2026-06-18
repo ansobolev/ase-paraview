@@ -22,6 +22,9 @@ def view_paraview(atoms: Atoms, **_) -> subprocess.Popen:
 
 
 class ParaViewViewer(CLIViewer):
+    def __init__(self):
+        super().__init__('paraview', 'xyz', ['paraview'])
+
     def view(self, atoms, data=None, repeat=None, **kwargs):
         view_paraview(atoms, **kwargs)
 

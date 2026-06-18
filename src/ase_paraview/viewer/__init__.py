@@ -13,7 +13,7 @@ V3ParaviewViewer = ExternalViewer(
 
 def _get_viewer():
     from ase_paraview.viewer.plugin import ParaViewViewer
-    return ParaViewViewer
+    return ParaViewViewer()
 
 
 paraview_plugin = ViewerPlugin(
